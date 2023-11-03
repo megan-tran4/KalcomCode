@@ -179,15 +179,16 @@ struct ContentView: View {
                     }
                 }
             }
-            
-        }
-        ZStack{
-            Color.gray
-                .frame(height:70)
-            Image("emergency-red 180x180")
-                .resizable()
-                .frame(width:50, height:50)
-            
+            ZStack{
+                Color.gray
+                    .frame(height:70)
+                NavigationLink(destination: requestRecieved()){
+                    Image("emergency-red 180x180")
+                        .resizable()
+                        .frame(width: 50, height: 50)
+                }
+                
+            }
         }
         .ignoresSafeArea()
     }
@@ -214,5 +215,3 @@ struct ContentView: View {
 #Preview {
     ContentView()
 }
-
-
