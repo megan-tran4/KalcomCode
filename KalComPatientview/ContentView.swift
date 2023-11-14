@@ -8,6 +8,9 @@
 import SwiftUI
 
 struct ContentView: View {
+    @EnvironmentObject var d:DataModels
+    @State private var Name:String = ""
+    @State private var RoomNumber:String = ""
     
     var body: some View {
         
@@ -15,24 +18,38 @@ struct ContentView: View {
             ZStack{
                 Color.white
                     .frame(height: 100)
-                Image("KalCom.logo")
-                    .resizable()
-                    .scaledToFit()
-                    .frame(width: 300)
+                HStack{
+                    Image("Hospital Assets")
+                        .resizable()
+                        .scaledToFit()
+                        .frame(width: 220)
+                    Text ("")
+                        .font(.largeTitle)
+                        .foregroundColor(/*@START_MENU_TOKEN@*/.blue/*@END_MENU_TOKEN@*/ )
+                    Image("KalCom.logo")
+                        .resizable()
+                        .scaledToFit()
+                        .frame(width: 100)
+                    
+                    
+                }
+                
                 
             }
             
             VStack{
                 Text("Patient Name")
                     .font(.title)
-                    .accentColor(/*@START_MENU_TOKEN@*/.blue/*@END_MENU_TOKEN@*/)
-                TextField("Type Your Name", text: /*@START_MENU_TOKEN@*//*@PLACEHOLDER=Value@*/.constant("")/*@END_MENU_TOKEN@*/)
-                Text("Patient ID")
+                TextField("Type Your Name", text: $Name)
+                Text("Room Number")
                     .font(.title)
-                TextField("Enter Your Patient ID", text: /*@START_MENU_TOKEN@*//*@PLACEHOLDER=Value@*/.constant("")/*@END_MENU_TOKEN@*/)
+                TextField("Enter Your Room Number", text: $RoomNumber)
                 Button("Submit"){
-                    /*@START_MENU_TOKEN@*//*@PLACEHOLDER=Action@*/ /*@END_MENU_TOKEN@*/
+                    Task{
+                        await d.addNewPatient(patientName: Name, roomNumber: RoomNumber)
+                    }
                 }
+                    
                 .font(/*@START_MENU_TOKEN@*/.title/*@END_MENU_TOKEN@*/)
                 .scaledToFit()
                 .frame(width:100, height:100)
@@ -43,10 +60,14 @@ struct ContentView: View {
             }
             .padding(90)
             .ignoresSafeArea()
+                
+                
+            }
         }
     }
-}
-
-#Preview {
-    ContentView()
+    
+struct ContentView_Previews: PreviewProvider {
+    static var previews: some View {
+        ContentView().environmentObject(DataModels())
+    }
 }
