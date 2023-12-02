@@ -1,0 +1,774 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 56;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		844C325A2B16463300FC3504 /* FirebaseAnalytics in Frameworks */ = {isa = PBXBuildFile; productRef = 844C32592B16463300FC3504 /* FirebaseAnalytics */; };
+		844C325C2B16463300FC3504 /* FirebaseAnalyticsSwift in Frameworks */ = {isa = PBXBuildFile; productRef = 844C325B2B16463300FC3504 /* FirebaseAnalyticsSwift */; };
+		844C325E2B16463300FC3504 /* FirebaseAuth in Frameworks */ = {isa = PBXBuildFile; productRef = 844C325D2B16463300FC3504 /* FirebaseAuth */; };
+		844C32602B16463300FC3504 /* FirebaseAuthCombine-Community in Frameworks */ = {isa = PBXBuildFile; productRef = 844C325F2B16463300FC3504 /* FirebaseAuthCombine-Community */; };
+		844C32622B16463300FC3504 /* FirebaseCrashlytics in Frameworks */ = {isa = PBXBuildFile; productRef = 844C32612B16463300FC3504 /* FirebaseCrashlytics */; };
+		844C32642B16463300FC3504 /* FirebaseDatabase in Frameworks */ = {isa = PBXBuildFile; productRef = 844C32632B16463300FC3504 /* FirebaseDatabase */; };
+		844C32662B16463300FC3504 /* FirebaseDatabaseSwift in Frameworks */ = {isa = PBXBuildFile; productRef = 844C32652B16463300FC3504 /* FirebaseDatabaseSwift */; };
+		844C32682B16463300FC3504 /* FirebaseFirestore in Frameworks */ = {isa = PBXBuildFile; productRef = 844C32672B16463300FC3504 /* FirebaseFirestore */; };
+		844C326A2B16463300FC3504 /* FirebaseFirestoreSwift in Frameworks */ = {isa = PBXBuildFile; productRef = 844C32692B16463300FC3504 /* FirebaseFirestoreSwift */; };
+		844C326C2B16463300FC3504 /* FirebaseFunctions in Frameworks */ = {isa = PBXBuildFile; productRef = 844C326B2B16463300FC3504 /* FirebaseFunctions */; };
+		844C326E2B16463300FC3504 /* FirebaseInAppMessaging-Beta in Frameworks */ = {isa = PBXBuildFile; productRef = 844C326D2B16463300FC3504 /* FirebaseInAppMessaging-Beta */; };
+		844C32702B16463300FC3504 /* FirebaseInAppMessagingSwift-Beta in Frameworks */ = {isa = PBXBuildFile; productRef = 844C326F2B16463300FC3504 /* FirebaseInAppMessagingSwift-Beta */; };
+		844C32722B16463300FC3504 /* FirebaseMessaging in Frameworks */ = {isa = PBXBuildFile; productRef = 844C32712B16463300FC3504 /* FirebaseMessaging */; };
+		844C32742B16463300FC3504 /* FirebaseStorage in Frameworks */ = {isa = PBXBuildFile; productRef = 844C32732B16463300FC3504 /* FirebaseStorage */; };
+		844C32762B1646DC00FC3504 /* StaffLoginView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 844C32752B1646DC00FC3504 /* StaffLoginView.swift */; };
+		844C32782B1647B500FC3504 /* StaffDataModels.swift in Sources */ = {isa = PBXBuildFile; fileRef = 844C32772B1647B500FC3504 /* StaffDataModels.swift */; };
+		844C327C2B1929EC00FC3504 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 844C327B2B1929EC00FC3504 /* GoogleService-Info.plist */; };
+		844C327E2B192B1800FC3504 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 844C327D2B192B1800FC3504 /* AppDelegate.swift */; };
+		844C32812B192CCE00FC3504 /* FirebaseRemoteConfigSwift in Frameworks */ = {isa = PBXBuildFile; productRef = 844C32802B192CCE00FC3504 /* FirebaseRemoteConfigSwift */; };
+		844C32832B19309600FC3504 /* TransactionModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 844C32822B19309600FC3504 /* TransactionModel.swift */; };
+		84990FDF2B0F1BFD00A97048 /* KalComNurseViewApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84990FDE2B0F1BFD00A97048 /* KalComNurseViewApp.swift */; };
+		84990FE12B0F1BFD00A97048 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84990FE02B0F1BFD00A97048 /* ContentView.swift */; };
+		84990FE32B0F1BFF00A97048 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 84990FE22B0F1BFF00A97048 /* Assets.xcassets */; };
+		84990FE62B0F1BFF00A97048 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 84990FE52B0F1BFF00A97048 /* Preview Assets.xcassets */; };
+		84990FF02B0F1C0000A97048 /* KalComNurseViewTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84990FEF2B0F1C0000A97048 /* KalComNurseViewTests.swift */; };
+		84990FFA2B0F1C0000A97048 /* KalComNurseViewUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84990FF92B0F1C0000A97048 /* KalComNurseViewUITests.swift */; };
+		84990FFC2B0F1C0000A97048 /* KalComNurseViewUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84990FFB2B0F1C0000A97048 /* KalComNurseViewUITestsLaunchTests.swift */; };
+		849910092B0F205A00A97048 /* ListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 849910082B0F205A00A97048 /* ListView.swift */; };
+		8499100B2B0F20A800A97048 /* ListViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8499100A2B0F20A800A97048 /* ListViewModel.swift */; };
+		8499100D2B0F211000A97048 /* ListRowView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8499100C2B0F211000A97048 /* ListRowView.swift */; };
+		8499100F2B0F21BB00A97048 /* AddView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8499100E2B0F21BB00A97048 /* AddView.swift */; };
+		849910112B0F225800A97048 /* ItemModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 849910102B0F225800A97048 /* ItemModel.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		84990FEC2B0F1C0000A97048 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 84990FD32B0F1BFD00A97048 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 84990FDA2B0F1BFD00A97048;
+			remoteInfo = KalComNurseView;
+		};
+		84990FF62B0F1C0000A97048 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 84990FD32B0F1BFD00A97048 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 84990FDA2B0F1BFD00A97048;
+			remoteInfo = KalComNurseView;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		844C32752B1646DC00FC3504 /* StaffLoginView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StaffLoginView.swift; sourceTree = "<group>"; };
+		844C32772B1647B500FC3504 /* StaffDataModels.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StaffDataModels.swift; sourceTree = "<group>"; };
+		844C327B2B1929EC00FC3504 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = "GoogleService-Info.plist"; path = "../../../Downloads/GoogleService-Info.plist"; sourceTree = "<group>"; };
+		844C327D2B192B1800FC3504 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		844C32822B19309600FC3504 /* TransactionModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TransactionModel.swift; sourceTree = "<group>"; };
+		84990FDB2B0F1BFD00A97048 /* KalComNurseView.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = KalComNurseView.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		84990FDE2B0F1BFD00A97048 /* KalComNurseViewApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KalComNurseViewApp.swift; sourceTree = "<group>"; };
+		84990FE02B0F1BFD00A97048 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		84990FE22B0F1BFF00A97048 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		84990FE52B0F1BFF00A97048 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		84990FEB2B0F1C0000A97048 /* KalComNurseViewTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = KalComNurseViewTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		84990FEF2B0F1C0000A97048 /* KalComNurseViewTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KalComNurseViewTests.swift; sourceTree = "<group>"; };
+		84990FF52B0F1C0000A97048 /* KalComNurseViewUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = KalComNurseViewUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		84990FF92B0F1C0000A97048 /* KalComNurseViewUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KalComNurseViewUITests.swift; sourceTree = "<group>"; };
+		84990FFB2B0F1C0000A97048 /* KalComNurseViewUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KalComNurseViewUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		849910082B0F205A00A97048 /* ListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListView.swift; sourceTree = "<group>"; };
+		8499100A2B0F20A800A97048 /* ListViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListViewModel.swift; sourceTree = "<group>"; };
+		8499100C2B0F211000A97048 /* ListRowView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListRowView.swift; sourceTree = "<group>"; };
+		8499100E2B0F21BB00A97048 /* AddView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddView.swift; sourceTree = "<group>"; };
+		849910102B0F225800A97048 /* ItemModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ItemModel.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		84990FD82B0F1BFD00A97048 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				844C32662B16463300FC3504 /* FirebaseDatabaseSwift in Frameworks */,
+				844C32642B16463300FC3504 /* FirebaseDatabase in Frameworks */,
+				844C325C2B16463300FC3504 /* FirebaseAnalyticsSwift in Frameworks */,
+				844C325E2B16463300FC3504 /* FirebaseAuth in Frameworks */,
+				844C32622B16463300FC3504 /* FirebaseCrashlytics in Frameworks */,
+				844C32682B16463300FC3504 /* FirebaseFirestore in Frameworks */,
+				844C326E2B16463300FC3504 /* FirebaseInAppMessaging-Beta in Frameworks */,
+				844C325A2B16463300FC3504 /* FirebaseAnalytics in Frameworks */,
+				844C32722B16463300FC3504 /* FirebaseMessaging in Frameworks */,
+				844C326C2B16463300FC3504 /* FirebaseFunctions in Frameworks */,
+				844C32602B16463300FC3504 /* FirebaseAuthCombine-Community in Frameworks */,
+				844C32742B16463300FC3504 /* FirebaseStorage in Frameworks */,
+				844C32812B192CCE00FC3504 /* FirebaseRemoteConfigSwift in Frameworks */,
+				844C32702B16463300FC3504 /* FirebaseInAppMessagingSwift-Beta in Frameworks */,
+				844C326A2B16463300FC3504 /* FirebaseFirestoreSwift in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		84990FE82B0F1C0000A97048 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		84990FF22B0F1C0000A97048 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		844C327F2B192CAB00FC3504 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		84990FD22B0F1BFD00A97048 = {
+			isa = PBXGroup;
+			children = (
+				84990FDD2B0F1BFD00A97048 /* KalComNurseView */,
+				84990FEE2B0F1C0000A97048 /* KalComNurseViewTests */,
+				84990FF82B0F1C0000A97048 /* KalComNurseViewUITests */,
+				84990FDC2B0F1BFD00A97048 /* Products */,
+				844C327F2B192CAB00FC3504 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		84990FDC2B0F1BFD00A97048 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				84990FDB2B0F1BFD00A97048 /* KalComNurseView.app */,
+				84990FEB2B0F1C0000A97048 /* KalComNurseViewTests.xctest */,
+				84990FF52B0F1C0000A97048 /* KalComNurseViewUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		84990FDD2B0F1BFD00A97048 /* KalComNurseView */ = {
+			isa = PBXGroup;
+			children = (
+				84990FDE2B0F1BFD00A97048 /* KalComNurseViewApp.swift */,
+				844C32752B1646DC00FC3504 /* StaffLoginView.swift */,
+				844C32772B1647B500FC3504 /* StaffDataModels.swift */,
+				84990FE02B0F1BFD00A97048 /* ContentView.swift */,
+				849910082B0F205A00A97048 /* ListView.swift */,
+				8499100C2B0F211000A97048 /* ListRowView.swift */,
+				849910102B0F225800A97048 /* ItemModel.swift */,
+				8499100E2B0F21BB00A97048 /* AddView.swift */,
+				8499100A2B0F20A800A97048 /* ListViewModel.swift */,
+				844C32822B19309600FC3504 /* TransactionModel.swift */,
+				844C327D2B192B1800FC3504 /* AppDelegate.swift */,
+				844C327B2B1929EC00FC3504 /* GoogleService-Info.plist */,
+				84990FE22B0F1BFF00A97048 /* Assets.xcassets */,
+				84990FE42B0F1BFF00A97048 /* Preview Content */,
+			);
+			path = KalComNurseView;
+			sourceTree = "<group>";
+		};
+		84990FE42B0F1BFF00A97048 /* Preview Content */ = {
+			isa = PBXGroup;
+			children = (
+				84990FE52B0F1BFF00A97048 /* Preview Assets.xcassets */,
+			);
+			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		84990FEE2B0F1C0000A97048 /* KalComNurseViewTests */ = {
+			isa = PBXGroup;
+			children = (
+				84990FEF2B0F1C0000A97048 /* KalComNurseViewTests.swift */,
+			);
+			path = KalComNurseViewTests;
+			sourceTree = "<group>";
+		};
+		84990FF82B0F1C0000A97048 /* KalComNurseViewUITests */ = {
+			isa = PBXGroup;
+			children = (
+				84990FF92B0F1C0000A97048 /* KalComNurseViewUITests.swift */,
+				84990FFB2B0F1C0000A97048 /* KalComNurseViewUITestsLaunchTests.swift */,
+			);
+			path = KalComNurseViewUITests;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		84990FDA2B0F1BFD00A97048 /* KalComNurseView */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 84990FFF2B0F1C0000A97048 /* Build configuration list for PBXNativeTarget "KalComNurseView" */;
+			buildPhases = (
+				84990FD72B0F1BFD00A97048 /* Sources */,
+				84990FD82B0F1BFD00A97048 /* Frameworks */,
+				84990FD92B0F1BFD00A97048 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = KalComNurseView;
+			packageProductDependencies = (
+				844C32592B16463300FC3504 /* FirebaseAnalytics */,
+				844C325B2B16463300FC3504 /* FirebaseAnalyticsSwift */,
+				844C325D2B16463300FC3504 /* FirebaseAuth */,
+				844C325F2B16463300FC3504 /* FirebaseAuthCombine-Community */,
+				844C32612B16463300FC3504 /* FirebaseCrashlytics */,
+				844C32632B16463300FC3504 /* FirebaseDatabase */,
+				844C32652B16463300FC3504 /* FirebaseDatabaseSwift */,
+				844C32672B16463300FC3504 /* FirebaseFirestore */,
+				844C32692B16463300FC3504 /* FirebaseFirestoreSwift */,
+				844C326B2B16463300FC3504 /* FirebaseFunctions */,
+				844C326D2B16463300FC3504 /* FirebaseInAppMessaging-Beta */,
+				844C326F2B16463300FC3504 /* FirebaseInAppMessagingSwift-Beta */,
+				844C32712B16463300FC3504 /* FirebaseMessaging */,
+				844C32732B16463300FC3504 /* FirebaseStorage */,
+				844C32802B192CCE00FC3504 /* FirebaseRemoteConfigSwift */,
+			);
+			productName = KalComNurseView;
+			productReference = 84990FDB2B0F1BFD00A97048 /* KalComNurseView.app */;
+			productType = "com.apple.product-type.application";
+		};
+		84990FEA2B0F1C0000A97048 /* KalComNurseViewTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 849910022B0F1C0000A97048 /* Build configuration list for PBXNativeTarget "KalComNurseViewTests" */;
+			buildPhases = (
+				84990FE72B0F1C0000A97048 /* Sources */,
+				84990FE82B0F1C0000A97048 /* Frameworks */,
+				84990FE92B0F1C0000A97048 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				84990FED2B0F1C0000A97048 /* PBXTargetDependency */,
+			);
+			name = KalComNurseViewTests;
+			productName = KalComNurseViewTests;
+			productReference = 84990FEB2B0F1C0000A97048 /* KalComNurseViewTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		84990FF42B0F1C0000A97048 /* KalComNurseViewUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 849910052B0F1C0000A97048 /* Build configuration list for PBXNativeTarget "KalComNurseViewUITests" */;
+			buildPhases = (
+				84990FF12B0F1C0000A97048 /* Sources */,
+				84990FF22B0F1C0000A97048 /* Frameworks */,
+				84990FF32B0F1C0000A97048 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				84990FF72B0F1C0000A97048 /* PBXTargetDependency */,
+			);
+			name = KalComNurseViewUITests;
+			productName = KalComNurseViewUITests;
+			productReference = 84990FF52B0F1C0000A97048 /* KalComNurseViewUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		84990FD32B0F1BFD00A97048 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1500;
+				LastUpgradeCheck = 1500;
+				TargetAttributes = {
+					84990FDA2B0F1BFD00A97048 = {
+						CreatedOnToolsVersion = 15.0;
+					};
+					84990FEA2B0F1C0000A97048 = {
+						CreatedOnToolsVersion = 15.0;
+						TestTargetID = 84990FDA2B0F1BFD00A97048;
+					};
+					84990FF42B0F1C0000A97048 = {
+						CreatedOnToolsVersion = 15.0;
+						TestTargetID = 84990FDA2B0F1BFD00A97048;
+					};
+				};
+			};
+			buildConfigurationList = 84990FD62B0F1BFD00A97048 /* Build configuration list for PBXProject "KalComNurseView" */;
+			compatibilityVersion = "Xcode 14.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 84990FD22B0F1BFD00A97048;
+			packageReferences = (
+				844C32582B16463300FC3504 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */,
+			);
+			productRefGroup = 84990FDC2B0F1BFD00A97048 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				84990FDA2B0F1BFD00A97048 /* KalComNurseView */,
+				84990FEA2B0F1C0000A97048 /* KalComNurseViewTests */,
+				84990FF42B0F1C0000A97048 /* KalComNurseViewUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		84990FD92B0F1BFD00A97048 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				84990FE62B0F1BFF00A97048 /* Preview Assets.xcassets in Resources */,
+				84990FE32B0F1BFF00A97048 /* Assets.xcassets in Resources */,
+				844C327C2B1929EC00FC3504 /* GoogleService-Info.plist in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		84990FE92B0F1C0000A97048 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		84990FF32B0F1C0000A97048 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		84990FD72B0F1BFD00A97048 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				84990FE12B0F1BFD00A97048 /* ContentView.swift in Sources */,
+				844C32832B19309600FC3504 /* TransactionModel.swift in Sources */,
+				84990FDF2B0F1BFD00A97048 /* KalComNurseViewApp.swift in Sources */,
+				8499100F2B0F21BB00A97048 /* AddView.swift in Sources */,
+				8499100D2B0F211000A97048 /* ListRowView.swift in Sources */,
+				8499100B2B0F20A800A97048 /* ListViewModel.swift in Sources */,
+				849910112B0F225800A97048 /* ItemModel.swift in Sources */,
+				849910092B0F205A00A97048 /* ListView.swift in Sources */,
+				844C32762B1646DC00FC3504 /* StaffLoginView.swift in Sources */,
+				844C327E2B192B1800FC3504 /* AppDelegate.swift in Sources */,
+				844C32782B1647B500FC3504 /* StaffDataModels.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		84990FE72B0F1C0000A97048 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				84990FF02B0F1C0000A97048 /* KalComNurseViewTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		84990FF12B0F1C0000A97048 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				84990FFC2B0F1C0000A97048 /* KalComNurseViewUITestsLaunchTests.swift in Sources */,
+				84990FFA2B0F1C0000A97048 /* KalComNurseViewUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		84990FED2B0F1C0000A97048 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 84990FDA2B0F1BFD00A97048 /* KalComNurseView */;
+			targetProxy = 84990FEC2B0F1C0000A97048 /* PBXContainerItemProxy */;
+		};
+		84990FF72B0F1C0000A97048 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 84990FDA2B0F1BFD00A97048 /* KalComNurseView */;
+			targetProxy = 84990FF62B0F1C0000A97048 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		84990FFD2B0F1C0000A97048 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "DEBUG $(inherited)";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		84990FFE2B0F1C0000A97048 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		849910002B0F1C0000A97048 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"KalComNurseView/Preview Content\"";
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = alcala.carlos.KalComNurseView;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		849910012B0F1C0000A97048 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"KalComNurseView/Preview Content\"";
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = alcala.carlos.KalComNurseView;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		849910032B0F1C0000A97048 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = alcala.carlos.KalComNurseViewTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/KalComNurseView.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/KalComNurseView";
+			};
+			name = Debug;
+		};
+		849910042B0F1C0000A97048 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = alcala.carlos.KalComNurseViewTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/KalComNurseView.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/KalComNurseView";
+			};
+			name = Release;
+		};
+		849910062B0F1C0000A97048 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = alcala.carlos.KalComNurseViewUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = KalComNurseView;
+			};
+			name = Debug;
+		};
+		849910072B0F1C0000A97048 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = alcala.carlos.KalComNurseViewUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = KalComNurseView;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		84990FD62B0F1BFD00A97048 /* Build configuration list for PBXProject "KalComNurseView" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				84990FFD2B0F1C0000A97048 /* Debug */,
+				84990FFE2B0F1C0000A97048 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		84990FFF2B0F1C0000A97048 /* Build configuration list for PBXNativeTarget "KalComNurseView" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				849910002B0F1C0000A97048 /* Debug */,
+				849910012B0F1C0000A97048 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		849910022B0F1C0000A97048 /* Build configuration list for PBXNativeTarget "KalComNurseViewTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				849910032B0F1C0000A97048 /* Debug */,
+				849910042B0F1C0000A97048 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		849910052B0F1C0000A97048 /* Build configuration list for PBXNativeTarget "KalComNurseViewUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				849910062B0F1C0000A97048 /* Debug */,
+				849910072B0F1C0000A97048 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		844C32582B16463300FC3504 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/firebase/firebase-ios-sdk";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 10.18.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		844C32592B16463300FC3504 /* FirebaseAnalytics */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 844C32582B16463300FC3504 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseAnalytics;
+		};
+		844C325B2B16463300FC3504 /* FirebaseAnalyticsSwift */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 844C32582B16463300FC3504 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseAnalyticsSwift;
+		};
+		844C325D2B16463300FC3504 /* FirebaseAuth */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 844C32582B16463300FC3504 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseAuth;
+		};
+		844C325F2B16463300FC3504 /* FirebaseAuthCombine-Community */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 844C32582B16463300FC3504 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = "FirebaseAuthCombine-Community";
+		};
+		844C32612B16463300FC3504 /* FirebaseCrashlytics */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 844C32582B16463300FC3504 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseCrashlytics;
+		};
+		844C32632B16463300FC3504 /* FirebaseDatabase */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 844C32582B16463300FC3504 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseDatabase;
+		};
+		844C32652B16463300FC3504 /* FirebaseDatabaseSwift */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 844C32582B16463300FC3504 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseDatabaseSwift;
+		};
+		844C32672B16463300FC3504 /* FirebaseFirestore */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 844C32582B16463300FC3504 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseFirestore;
+		};
+		844C32692B16463300FC3504 /* FirebaseFirestoreSwift */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 844C32582B16463300FC3504 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseFirestoreSwift;
+		};
+		844C326B2B16463300FC3504 /* FirebaseFunctions */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 844C32582B16463300FC3504 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseFunctions;
+		};
+		844C326D2B16463300FC3504 /* FirebaseInAppMessaging-Beta */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 844C32582B16463300FC3504 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = "FirebaseInAppMessaging-Beta";
+		};
+		844C326F2B16463300FC3504 /* FirebaseInAppMessagingSwift-Beta */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 844C32582B16463300FC3504 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = "FirebaseInAppMessagingSwift-Beta";
+		};
+		844C32712B16463300FC3504 /* FirebaseMessaging */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 844C32582B16463300FC3504 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseMessaging;
+		};
+		844C32732B16463300FC3504 /* FirebaseStorage */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 844C32582B16463300FC3504 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseStorage;
+		};
+		844C32802B192CCE00FC3504 /* FirebaseRemoteConfigSwift */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 844C32582B16463300FC3504 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseRemoteConfigSwift;
+		};
+/* End XCSwiftPackageProductDependency section */
+	};
+	rootObject = 84990FD32B0F1BFD00A97048 /* Project object */;
+}
