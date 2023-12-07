@@ -1,0 +1,591 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 56;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		845BA27B2B2174BD0091DA45 /* SelectionScreenKalcomApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 845BA27A2B2174BD0091DA45 /* SelectionScreenKalcomApp.swift */; };
+		845BA27D2B2174BE0091DA45 /* ContentView in Sources */ = {isa = PBXBuildFile; fileRef = 845BA27C2B2174BE0091DA45 /* ContentView */; };
+		845BA27F2B2174C40091DA45 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 845BA27E2B2174C40091DA45 /* Assets.xcassets */; };
+		845BA2822B2174C40091DA45 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 845BA2812B2174C40091DA45 /* Preview Assets.xcassets */; };
+		845BA28C2B2174C40091DA45 /* SelectionScreenKalcomTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 845BA28B2B2174C40091DA45 /* SelectionScreenKalcomTests.swift */; };
+		845BA2962B2174C40091DA45 /* SelectionScreenKalcomUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 845BA2952B2174C40091DA45 /* SelectionScreenKalcomUITests.swift */; };
+		845BA2982B2174C40091DA45 /* SelectionScreenKalcomUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 845BA2972B2174C40091DA45 /* SelectionScreenKalcomUITestsLaunchTests.swift */; };
+		845BA2A52B2177E80091DA45 /* MainSelectorView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 845BA2A42B2177E80091DA45 /* MainSelectorView.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		845BA2882B2174C40091DA45 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 845BA26F2B2174BD0091DA45 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 845BA2762B2174BD0091DA45;
+			remoteInfo = SelectionScreenKalcom;
+		};
+		845BA2922B2174C40091DA45 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 845BA26F2B2174BD0091DA45 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 845BA2762B2174BD0091DA45;
+			remoteInfo = SelectionScreenKalcom;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		845BA2772B2174BD0091DA45 /* SelectionScreenKalcom.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SelectionScreenKalcom.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		845BA27A2B2174BD0091DA45 /* SelectionScreenKalcomApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SelectionScreenKalcomApp.swift; sourceTree = "<group>"; };
+		845BA27C2B2174BE0091DA45 /* ContentView */ = {isa = PBXFileReference; lastKnownFileType = text; path = ContentView; sourceTree = "<group>"; };
+		845BA27E2B2174C40091DA45 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		845BA2812B2174C40091DA45 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		845BA2872B2174C40091DA45 /* SelectionScreenKalcomTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SelectionScreenKalcomTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		845BA28B2B2174C40091DA45 /* SelectionScreenKalcomTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SelectionScreenKalcomTests.swift; sourceTree = "<group>"; };
+		845BA2912B2174C40091DA45 /* SelectionScreenKalcomUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SelectionScreenKalcomUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		845BA2952B2174C40091DA45 /* SelectionScreenKalcomUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SelectionScreenKalcomUITests.swift; sourceTree = "<group>"; };
+		845BA2972B2174C40091DA45 /* SelectionScreenKalcomUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SelectionScreenKalcomUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		845BA2A42B2177E80091DA45 /* MainSelectorView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainSelectorView.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		845BA2742B2174BD0091DA45 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		845BA2842B2174C40091DA45 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		845BA28E2B2174C40091DA45 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		845BA26E2B2174BD0091DA45 = {
+			isa = PBXGroup;
+			children = (
+				845BA2792B2174BD0091DA45 /* SelectionScreenKalcom */,
+				845BA28A2B2174C40091DA45 /* SelectionScreenKalcomTests */,
+				845BA2942B2174C40091DA45 /* SelectionScreenKalcomUITests */,
+				845BA2782B2174BD0091DA45 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		845BA2782B2174BD0091DA45 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				845BA2772B2174BD0091DA45 /* SelectionScreenKalcom.app */,
+				845BA2872B2174C40091DA45 /* SelectionScreenKalcomTests.xctest */,
+				845BA2912B2174C40091DA45 /* SelectionScreenKalcomUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		845BA2792B2174BD0091DA45 /* SelectionScreenKalcom */ = {
+			isa = PBXGroup;
+			children = (
+				845BA27A2B2174BD0091DA45 /* SelectionScreenKalcomApp.swift */,
+				845BA27C2B2174BE0091DA45 /* ContentView */,
+				845BA2A42B2177E80091DA45 /* MainSelectorView.swift */,
+				845BA27E2B2174C40091DA45 /* Assets.xcassets */,
+				845BA2802B2174C40091DA45 /* Preview Content */,
+			);
+			path = SelectionScreenKalcom;
+			sourceTree = "<group>";
+		};
+		845BA2802B2174C40091DA45 /* Preview Content */ = {
+			isa = PBXGroup;
+			children = (
+				845BA2812B2174C40091DA45 /* Preview Assets.xcassets */,
+			);
+			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		845BA28A2B2174C40091DA45 /* SelectionScreenKalcomTests */ = {
+			isa = PBXGroup;
+			children = (
+				845BA28B2B2174C40091DA45 /* SelectionScreenKalcomTests.swift */,
+			);
+			path = SelectionScreenKalcomTests;
+			sourceTree = "<group>";
+		};
+		845BA2942B2174C40091DA45 /* SelectionScreenKalcomUITests */ = {
+			isa = PBXGroup;
+			children = (
+				845BA2952B2174C40091DA45 /* SelectionScreenKalcomUITests.swift */,
+				845BA2972B2174C40091DA45 /* SelectionScreenKalcomUITestsLaunchTests.swift */,
+			);
+			path = SelectionScreenKalcomUITests;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		845BA2762B2174BD0091DA45 /* SelectionScreenKalcom */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 845BA29B2B2174C40091DA45 /* Build configuration list for PBXNativeTarget "SelectionScreenKalcom" */;
+			buildPhases = (
+				845BA2732B2174BD0091DA45 /* Sources */,
+				845BA2742B2174BD0091DA45 /* Frameworks */,
+				845BA2752B2174BD0091DA45 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = SelectionScreenKalcom;
+			productName = SelectionScreenKalcom;
+			productReference = 845BA2772B2174BD0091DA45 /* SelectionScreenKalcom.app */;
+			productType = "com.apple.product-type.application";
+		};
+		845BA2862B2174C40091DA45 /* SelectionScreenKalcomTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 845BA29E2B2174C40091DA45 /* Build configuration list for PBXNativeTarget "SelectionScreenKalcomTests" */;
+			buildPhases = (
+				845BA2832B2174C40091DA45 /* Sources */,
+				845BA2842B2174C40091DA45 /* Frameworks */,
+				845BA2852B2174C40091DA45 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				845BA2892B2174C40091DA45 /* PBXTargetDependency */,
+			);
+			name = SelectionScreenKalcomTests;
+			productName = SelectionScreenKalcomTests;
+			productReference = 845BA2872B2174C40091DA45 /* SelectionScreenKalcomTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		845BA2902B2174C40091DA45 /* SelectionScreenKalcomUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 845BA2A12B2174C40091DA45 /* Build configuration list for PBXNativeTarget "SelectionScreenKalcomUITests" */;
+			buildPhases = (
+				845BA28D2B2174C40091DA45 /* Sources */,
+				845BA28E2B2174C40091DA45 /* Frameworks */,
+				845BA28F2B2174C40091DA45 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				845BA2932B2174C40091DA45 /* PBXTargetDependency */,
+			);
+			name = SelectionScreenKalcomUITests;
+			productName = SelectionScreenKalcomUITests;
+			productReference = 845BA2912B2174C40091DA45 /* SelectionScreenKalcomUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		845BA26F2B2174BD0091DA45 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1500;
+				LastUpgradeCheck = 1500;
+				TargetAttributes = {
+					845BA2762B2174BD0091DA45 = {
+						CreatedOnToolsVersion = 15.0;
+					};
+					845BA2862B2174C40091DA45 = {
+						CreatedOnToolsVersion = 15.0;
+						TestTargetID = 845BA2762B2174BD0091DA45;
+					};
+					845BA2902B2174C40091DA45 = {
+						CreatedOnToolsVersion = 15.0;
+						TestTargetID = 845BA2762B2174BD0091DA45;
+					};
+				};
+			};
+			buildConfigurationList = 845BA2722B2174BD0091DA45 /* Build configuration list for PBXProject "SelectionScreenKalcom" */;
+			compatibilityVersion = "Xcode 14.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 845BA26E2B2174BD0091DA45;
+			productRefGroup = 845BA2782B2174BD0091DA45 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				845BA2762B2174BD0091DA45 /* SelectionScreenKalcom */,
+				845BA2862B2174C40091DA45 /* SelectionScreenKalcomTests */,
+				845BA2902B2174C40091DA45 /* SelectionScreenKalcomUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		845BA2752B2174BD0091DA45 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				845BA2822B2174C40091DA45 /* Preview Assets.xcassets in Resources */,
+				845BA27F2B2174C40091DA45 /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		845BA2852B2174C40091DA45 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		845BA28F2B2174C40091DA45 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		845BA2732B2174BD0091DA45 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				845BA2A52B2177E80091DA45 /* MainSelectorView.swift in Sources */,
+				845BA27D2B2174BE0091DA45 /* ContentView in Sources */,
+				845BA27B2B2174BD0091DA45 /* SelectionScreenKalcomApp.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		845BA2832B2174C40091DA45 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				845BA28C2B2174C40091DA45 /* SelectionScreenKalcomTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		845BA28D2B2174C40091DA45 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				845BA2982B2174C40091DA45 /* SelectionScreenKalcomUITestsLaunchTests.swift in Sources */,
+				845BA2962B2174C40091DA45 /* SelectionScreenKalcomUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		845BA2892B2174C40091DA45 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 845BA2762B2174BD0091DA45 /* SelectionScreenKalcom */;
+			targetProxy = 845BA2882B2174C40091DA45 /* PBXContainerItemProxy */;
+		};
+		845BA2932B2174C40091DA45 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 845BA2762B2174BD0091DA45 /* SelectionScreenKalcom */;
+			targetProxy = 845BA2922B2174C40091DA45 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		845BA2992B2174C40091DA45 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "DEBUG $(inherited)";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		845BA29A2B2174C40091DA45 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		845BA29C2B2174C40091DA45 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"SelectionScreenKalcom/Preview Content\"";
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = alcala.carlos.SelectionScreenKalcom;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		845BA29D2B2174C40091DA45 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"SelectionScreenKalcom/Preview Content\"";
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = alcala.carlos.SelectionScreenKalcom;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		845BA29F2B2174C40091DA45 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = alcala.carlos.SelectionScreenKalcomTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/SelectionScreenKalcom.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/SelectionScreenKalcom";
+			};
+			name = Debug;
+		};
+		845BA2A02B2174C40091DA45 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = alcala.carlos.SelectionScreenKalcomTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/SelectionScreenKalcom.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/SelectionScreenKalcom";
+			};
+			name = Release;
+		};
+		845BA2A22B2174C40091DA45 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = alcala.carlos.SelectionScreenKalcomUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = SelectionScreenKalcom;
+			};
+			name = Debug;
+		};
+		845BA2A32B2174C40091DA45 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = alcala.carlos.SelectionScreenKalcomUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = SelectionScreenKalcom;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		845BA2722B2174BD0091DA45 /* Build configuration list for PBXProject "SelectionScreenKalcom" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				845BA2992B2174C40091DA45 /* Debug */,
+				845BA29A2B2174C40091DA45 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		845BA29B2B2174C40091DA45 /* Build configuration list for PBXNativeTarget "SelectionScreenKalcom" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				845BA29C2B2174C40091DA45 /* Debug */,
+				845BA29D2B2174C40091DA45 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		845BA29E2B2174C40091DA45 /* Build configuration list for PBXNativeTarget "SelectionScreenKalcomTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				845BA29F2B2174C40091DA45 /* Debug */,
+				845BA2A02B2174C40091DA45 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		845BA2A12B2174C40091DA45 /* Build configuration list for PBXNativeTarget "SelectionScreenKalcomUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				845BA2A22B2174C40091DA45 /* Debug */,
+				845BA2A32B2174C40091DA45 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 845BA26F2B2174BD0091DA45 /* Project object */;
+}

@@ -1,0 +1,26 @@
+//
+//  ContentView.swift
+//  SelectionScreenKalcom
+//
+//  Created by admin on 12/6/23.
+//
+
+import SwiftUI
+
+struct ContentView: View {
+    var body: some View {
+        NavigationView {
+            VStack {
+                Spacer() // Push content to the top
+                MainSelectorView()
+                Spacer() // Push content to the bottom
+            }
+        }
+    }
+}
+
+struct ContentView_Previews: PreviewProvider {
+    static var previews: some View {
+        ContentView()
+    }
+}
