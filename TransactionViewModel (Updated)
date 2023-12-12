@@ -1,0 +1,96 @@
+import Foundation
+import Firebase
+
+class TransactionViewModel: ObservableObject {
+    @Published var transactionsByRoom: [String: [Transaction]] = [:]
+
+    private var timer: Timer?
+
+    init() {
+        fetchData()
+
+        //this calls the data every second
+        timer = Timer.scheduledTimer(withTimeInterval: 1.0, repeats: true) { [weak self] _ in
+            self?.fetchData()
+        }
+    }
+
+    deinit {
+        //closes timer
+        timer?.invalidate()
+    }
+
+    func fetchData() {
+        let db = Firestore.firestore()
+        let transactionsCollection = db.collection("Transactions")
+
+        transactionsCollection.getDocuments { [weak self] (querySnapshot, error) in
+            guard let self = self else { return }
+
+            if let error = error {
+                print("Error getting documents: \(error)")
+            } else {
+                var transactionsByRoom: [String: [Transaction]] = [:]
+
+                for document in querySnapshot!.documents {
+                    let patientRequest = document["PatientRequest"] as? String ?? ""
+                    let roomNumber = document["RoomNumber"] as? String ?? ""
+
+                    // Check
+                    if document["DateCompleted"] == nil {
+                        let transaction = Transaction(patientRequest: patientRequest, roomNumber: roomNumber)
+
+                        if var roomTransactions = transactionsByRoom[roomNumber] {
+                            roomTransactions.append(transaction)
+                            transactionsByRoom[roomNumber] = roomTransactions
+                        } else {
+                            transactionsByRoom[roomNumber] = [transaction]
+                        }
+                    }
+                }
+
+                DispatchQueue.main.async {
+                    self.transactionsByRoom = transactionsByRoom
+                }
+            }
+        }
+    }
+
+    func refreshData() {
+        fetchData()
+    }
+
+    func deleteTransaction(_ transaction: Transaction, inRoom roomNumber: String) {
+        if var roomTransactions = transactionsByRoom[roomNumber],
+           let index = roomTransactions.firstIndex(of: transaction) {
+
+            roomTransactions.remove(at: index)
+            transactionsByRoom[roomNumber] = roomTransactions
+
+            updateFirestoreDocument(transaction, inRoom: roomNumber)
+        }
+    }
+
+    private func updateFirestoreDocument(_ transaction: Transaction, inRoom roomNumber: String) {
+        let db = Firestore.firestore()
+        let transactionsCollection = db.collection("Transactions")
+
+        transactionsCollection
+            .whereField("PatientRequest", isEqualTo: transaction.patientRequest)
+            .whereField("RoomNumber", isEqualTo: roomNumber)
+            .getDocuments { (querySnapshot, error) in
+                if let error = error {
+                    print("Error updating documents: \(error)")
+                } else {
+                    for document in querySnapshot!.documents {
+
+                        if document.data()["DateCompleted"] == nil {
+                            // Timestamp Nurse
+                            let timestamp = FieldValue.serverTimestamp()
+                            document.reference.updateData(["DateCompleted": timestamp])
+                        }
+                    }
+                }
+            }
+    }
+}
